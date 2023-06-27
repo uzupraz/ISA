@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Simple Interest Calculator</h1>
+
+            <div class="row">
+                <div class="left">
+                    Amount
+                </div>
+                <div class="right">
+                    <input type="number"  id="principal" onchange="checkPrincipal()">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    Rate
+                </div>
+                <div class="right">
+                    <input type="range"  id="rate" min="0" max="20" step="0.25" oninput="updateRate()" default="10">
+                    <span id="rate_val">10%</span>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="left">
+                    No. of Years
+                </div>
+                <div class="right">
+                    <select id="time">
+                        <option value="" style="display: none;"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <button id="calc" onclick="compute()">Compute</button>
+            </div>
+            
+        </div>
+        <div class="footer">
+            &copy This belongs to Prajal.
+        </div>
+        <div class="hide" id="overlay" onclick="hide()">    
+        </div>
+        <div id="results" class="hide" onclick="hide()">
+            If you deposit <mark><span id="p"></span></mark> for <mark><span id="t"></span></mark> years at a rate of <mark><span id="r"></span></mark>, you will get an interest of <mark><span id="result"></span></mark> resulting to a total amount of <mark><span id="amt"></span></mark> by the end of <mark><span id="date"></span></mark>.
+        </div>
+    </body>
+</html>

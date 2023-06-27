@@ -1,0 +1,63 @@
+body {
+    margin:0px;
+    background-color: aqua;
+    width:100vw;
+    height:100vh;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin:auto;
+    width:50%;
+    height:50%;
+    padding:100px;
+    background-color: rgb(88, 113, 124);
+    text-align: center;
+}
+
+.message {
+    font-size: 180px;
+    margin:20px;
+}
+
+.options {
+    padding:20px;
+    margin:auto;
+    width:90%;
+}
+
+.options button{
+    padding:20px;
+    border: 0px;
+    color:white;
+    font-size:30px;
+    background-color: rgb(30, 135, 135);
+    border-radius: 7px;
+    margin-left:50px;
+}
+
+.options button:hover{
+    background-color: rgb(25, 85, 85);
+    transition: 500ms;
+}
+
+.postscript {
+    width:100%;
+    padding:20px;
+}
+
+.postscript .left{
+    float:left;
+}
+
+.postscript .right{
+    float:right;
+}
+
+.hide {
+    display:none;
+    z-index:1;
+}

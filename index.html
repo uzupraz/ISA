@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(82, 82, 82, 0.243);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type=radio], [type=checkbox]{
+            padding:12px;
+            margin-top:12px;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width:40%;
+            align-items: center;
+            margin:auto;
+        }
+        
+        .left {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .right {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .submit{
+            padding:10px;
+            float:right;
+            border:0px;
+            border-radius: 3px;
+            background-color: #04AA6D;
+        }
+
+        input[type=reset]{
+            padding:10px;
+            float:right;
+            border:0px;
+            border-radius: 3px;
+            background-color: #04AA6D;
+            margin-right:20px;
+        }
+        
+        .submit:hover{
+            background-color: #037149;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Herald College</h1>
+        <form>
+            <div class="row">
+                <div class="left">
+                    <label for="fname"> Name</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="email">Email</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="email" name="email" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="age">Age</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="age" name="age" placeholder="Enter your age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="right">
+                    <input type="radio" id="male" name="gender">Male
+                    <input type="radio" id="female" name="gender">Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="education">Education</label>
+                </div>
+                <div class="right">
+                    <select id="education" name="education">
+                        <option style="display:none"></option>
+                        <option value="SEE">SEE</option>
+                        <option value="+2">+2</option>
+                        <option value="Bachelors">Bachelors</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="Languages">Languages</label>
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="python" name="checkbox">Python
+                    <input type="checkbox" id="java" name="checkbox">Java
+                    <input type="checkbox" id="c++" name="checkbox">C/C++
+                    <input type="checkbox" id="html" name="checkbox">HTML
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="message">Message</label>
+                </div>
+                <div class="right">
+                    <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button class="submit">Submit</button>
+                <input type="reset">
+            </div>
+        </form>
+      </div>
+</body>
+</html>
