@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="search_value" default="Avatar" placeholder="Enter the movie title">
+            <button id="upload">Search</button>
+        </div>
+        <div class="movie">
+            <div class="left">
+                <h1 id="title"></h1>
+                <div class="hide" id="imdbrating">
+                    <h1 class='subdetails' id="rating">IMDB Rating:</h1>
+                    <div class="imdb">
+                        <div class="circular-progress">
+                            <span class="progress-value"></span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class='subdetails' id="makeyear"></h1>
+                <h1 class="subdetails" id="director"></h1>
+                <p id="plot"></p>
+            </div>
+            <div class="right">
+                <div id="poster"></div>
+            </div>
+            <div id="err"></div>
+        </div>
+        &nbsp
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
