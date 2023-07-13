@@ -1,0 +1,19 @@
+{ 
+    "movies":[{
+            "id":"1",
+            "Title":"Titanic",
+            "Poster":"img/",
+            "Year":"1997",
+            "imdb":"7.9",
+            "Genre":"Romance/Drama"
+        },
+        {
+            "id":"2",
+            "Title":"Avatar",
+            "Poster":"img/",
+            "Year":"2009",
+            "imdb":"7.9",
+            "Genre":"Sci-fi/Action"
+        }
+    ]
+}

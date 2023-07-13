@@ -1,0 +1,35 @@
+[
+    {
+        "name":"Prajal",
+        "age":22,
+        "email":"uzumakiprajal@gmail.com",
+        "isActive":true,
+        "address":{
+            "city":"bhaktapur",
+            "country":"nepal"
+        },
+        "hobbies":["eating","sleeping","roaming"]
+    },
+    {
+        "name":"Rohan",
+        "age":17,
+        "email":"rohanpradhan@gmail.com",
+        "isActive":true,
+        "address":{
+            "city":"kathamandu",
+            "country":"nepal"
+        },
+        "hobbies":["sleeping","eating","roaming"]
+    },
+    {
+        "name":"Simon",
+        "age":18,
+        "email":"simonrana@gmail.com",
+        "isActive":true,
+        "address":{
+            "city":"kathmandu",
+            "country":"nepal"
+        },
+        "hobbies":["trashtalking","sleeping","roaming"]
+    }
+]

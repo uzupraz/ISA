@@ -1,0 +1,8 @@
+{
+    "movies":{
+        "id":1,
+        "title":"Title1",
+        "releaseyear":2022,
+        "director":"Director1"
+    }
+}

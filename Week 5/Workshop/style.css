@@ -1,0 +1,25 @@
+body {
+    margin:0px;
+    background-color: black;
+    width:100vw;
+    height:100vh;
+    color:white;
+}
+
+.container {
+    margin:auto;
+    margin-top:50px;
+    width:90%;
+    padding:20px;
+    background-color: rgb(40, 44, 47);
+}
+
+.left {
+    float:left;
+    width:20%;
+}
+
+.right {
+    float:right;
+    width:80%;
+}
